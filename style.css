@@ -2,7 +2,7 @@ body{
     margin: 0;
     padding: 0;
     background: url(background.jpeg);
-    background-attachment:fixed;
+    background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -11,11 +11,9 @@ body{
     width: 26%;
     min-width: 300px;
     height: 70%;
-    
     background-color:#04124a;
     padding: 2.5%;
     text-align: center;
-    
     margin: auto;
     margin-top: 10%;
     color:rgb(235, 246, 255);
@@ -29,7 +27,6 @@ body{
     max-width: 165px;
     height: 50%;
     width: 50%;
-    
 }
 
 .box h1 {
@@ -51,7 +48,6 @@ ul {
 
 .box li {
     display: inline-block;
-    size: 1em;
     margin: 10px;
     list-style: none;
 }
@@ -60,14 +56,55 @@ ul {
     color:rgb(235, 246, 255);
     font-size: 2.5em;
     transition: all ease-in-out 250ms;
-
 }
 
 .box li a:hover {
     opacity: 60%;
 }
 
+@keyframes smooth-wiggle {
+    0%   { transform: rotate(0deg); }
+    10%  { transform: rotate(6deg); }
+    20%  { transform: rotate(-6deg); }
+    30%  { transform: rotate(5deg); }
+    40%  { transform: rotate(-5deg); }
+    50%  { transform: rotate(3deg); }
+    60%  { transform: rotate(-2deg); }
+    70%  { transform: rotate(1deg); }
+    80%  { transform: rotate(0deg); }
+
+    /* much shorter rest */
+    100% { transform: rotate(0deg); }
+}
+
+/* FINAL ANIMATION */
+.app-store-wiggle i {
+    display: inline-block;
+    animation: smooth-wiggle 2.2s infinite ease-in-out;
+}
+
+@keyframes pulse-wiggle {
+    0%   { transform: rotate(0deg) scale(1); }
+
+    /* rotate + grow */
+    15%  { transform: rotate(6deg) scale(1.15); }
+    30%  { transform: rotate(-6deg) scale(1.18); }
+    45%  { transform: rotate(4deg) scale(1.15); }
+    60%  { transform: rotate(-3deg) scale(1.12); }
+
+    /* return to normal */
+    80%  { transform: rotate(1deg) scale(1.05); }
+    100% { transform: rotate(0deg) scale(1); }
+}
+
+.app-store-wiggle i {
+    display: inline-block;
+    animation: pulse-wiggle 1.6s infinite ease-in-out;
+}
+
+
+/* ------------------------------- */
+
 @media (max-width: 768px) {
     
 }
-
