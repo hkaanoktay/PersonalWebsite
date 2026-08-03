@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="theme-color" content="#102530">
+    <meta name="color-scheme" content="dark">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pocket Racer | Hikmet Kaan Oktay</title>
+    <link rel="preload" as="image" href="images/background.jpeg?v=20260803b">
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <style>
+        html, body { background: #09131a; }
+    </style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="pocket-page">
+    <a href="index.html" class="home-icon" aria-label="Back to home">
+        <i class="fa-solid fa-house"></i>
+    </a>
+    <main class="subpage-shell">
+        <section class="panel subpage-panel reveal">
+            <p class="subpage-kicker">Game Project</p>
+            <h1>Pocket Racer</h1>
+            <p class="subpage-intro">
+                Pocket Racer is my mobile racing title built around satisfying controls,
+                progression-driven gameplay, and smooth on-device performance.
+                The project focuses on making short play sessions feel rewarding and replayable.
+            </p>
+
+            <div class="subpage-actions">
+                <a href="https://apps.apple.com/app/pocket-racer-2d-racing-career/id6755335513" target="_blank" rel="noopener noreferrer" class="btn primary">
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    Open on App Store
+                </a>
+            </div>
+        </section>
+
+        <footer class="footer reveal delay-1">
+            <p>Designed and developed by Hikmet Kaan Oktay</p>
+            <p><span id="year"></span> | hkaanoktay@icloud.com</p>
+        </footer>
+    </main>
+
+    <script>
+        const revealTargets = document.querySelectorAll('.reveal');
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('in-view');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.15 });
+
+        revealTargets.forEach((el) => observer.observe(el));
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

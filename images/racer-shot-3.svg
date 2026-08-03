@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-label="Pocket Racer desert track">
+  <defs>
+    <linearGradient id="skyC" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffb05a"/>
+      <stop offset="1" stop-color="#f26a3d"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="720" fill="url(#skyC)"/>
+  <polygon points="390,720 810,720 690,230 510,230" fill="#5f4a44"/>
+  <path d="M0 490 C160 430 320 430 460 500 L0 720 Z" fill="#d6905a"/>
+  <path d="M1200 480 C1010 430 860 440 740 500 L1200 720 Z" fill="#bf7c4e"/>
+  <path d="M510 520 C560 472 640 472 690 520 L705 565 C650 615 560 615 505 565 Z" fill="#5fd1ff"/>
+  <circle cx="542" cy="565" r="24" fill="#232a34"/>
+  <circle cx="675" cy="565" r="24" fill="#232a34"/>
+  <rect x="588" y="300" width="24" height="70" fill="#f7ebac"/>
+  <rect x="588" y="408" width="24" height="70" fill="#f7ebac"/>
+</svg>

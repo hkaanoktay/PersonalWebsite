@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-label="Pocket Racer neon night">
+  <defs>
+    <linearGradient id="skyB" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#190029"/>
+      <stop offset="1" stop-color="#051126"/>
+    </linearGradient>
+    <linearGradient id="neonB" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#00f5ff"/>
+      <stop offset="1" stop-color="#ff4ea1"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="720" fill="url(#skyB)"/>
+  <polygon points="390,720 810,720 690,250 510,250" fill="#22253f"/>
+  <g opacity="0.7" stroke="url(#neonB)" stroke-width="8" fill="none">
+    <path d="M140 510 C310 370 420 370 600 510"/>
+    <path d="M1060 510 C890 370 780 370 600 510"/>
+  </g>
+  <g fill="#9dd8ff" opacity="0.65">
+    <rect x="90" y="180" width="120" height="240"/>
+    <rect x="228" y="120" width="84" height="300"/>
+    <rect x="920" y="140" width="100" height="270"/>
+    <rect x="1042" y="200" width="72" height="220"/>
+  </g>
+  <path d="M520 510 C565 460 635 460 680 510 L695 560 C645 605 560 605 505 560 Z" fill="#22e8bf"/>
+  <circle cx="540" cy="562" r="24" fill="#11192b"/>
+  <circle cx="665" cy="562" r="24" fill="#11192b"/>
+  <rect x="588" y="315" width="24" height="74" fill="#ffffff" opacity="0.75"/>
+  <rect x="588" y="430" width="24" height="74" fill="#ffffff" opacity="0.75"/>
+</svg>

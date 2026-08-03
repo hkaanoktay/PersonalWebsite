@@ -1,44 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-<meta name="theme-color" content="#2e4955">
 <head>
+    <meta name="theme-color" content="#102530">
+    <meta name="color-scheme" content="dark">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hikmet Kaan Oktay</title>
-    <link rel="icon" type="image/x-icon" href="/favicon.png">
+    <link rel="preload" as="image" href="images/background.jpeg?v=20260803b">
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <style>
+        html, body { background: #09131a; }
+    </style>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css ">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
-<body>
-    <div class="box"> 
+<body class="home-page">
+    <main class="site-shell">
+        <section class="hero panel reveal">
+            <div class="profile-wrap">
+                <img src="images/kaan.jpg" alt="Portrait of Hikmet Kaan Oktay" class="profile-image" loading="eager" decoding="async" fetchpriority="high" width="640" height="640">
+            </div>
 
-        <img src="kaan.jpg">
+            <div class="hero-content">
+                <h1>Hikmet Kaan Oktay</h1>
+                <p class="subtitle">Software Developer Intern at IBTech</p>
+                <p class="intro">
+                    I am a software developer who graduated from the Computer
+                    <br>Science department of Bilkent University.
+                </p>
 
-        <h1>Hikmet Kaan Oktay</h1>
+                <div class="cta-row">
+                    <a href="resume.pdf" target="_blank" class="btn primary" rel="noopener noreferrer">
+                        <i class="fa-solid fa-file-lines"></i>
+                        View Resume
+                    </a>
+                    <a href="mailto:hkaanoktay@icloud.com" class="btn secondary">
+                        <i class="fa-solid fa-paper-plane"></i>
+                        Send E-mail
+                    </a>
+                </div>
 
-        <h5>Computer Science Student at Bilkent University</h5>
+                <ul class="social-links" aria-label="Social links">
+                    <li>
+                        <a href="https://apps.apple.com/app/pocket-racer-2d-racing-career/id6755335513" target="_blank" rel="noopener noreferrer" class="app-store-wiggle" aria-label="App Store">
+                            <i class="fa-brands fa-app-store-ios"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/kaan-oktay/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/hkaanoktay" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/hikmetkaanoktay/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
 
-        <p>You can see my resume by clicking the file icon below.</p>
-        
-        <ul>
-            <li>
-                <a href="https://apps.apple.com/app/pocket-racer-2d-racing-career/id6755335513" target="_blank" class="app-store-wiggle">
-                    <i class="fa-brands fa-app-store-ios"></i>
-                </a>
-            </li>
+        <section class="projects-row reveal delay-1" aria-label="Projects">
+            <a href="pocket-racer.html" class="panel project-tile">
+                <div class="tile-title-row">
+                    <img src="images/pocket-racer-icon.PNG" alt="Pocket Racer icon" class="tile-thumb" loading="lazy" decoding="async">
+                    <h2>Pocket Racer</h2>
+                </div>
+                <p>
+                    Mobile racing career game that I developed.
+                </p>
+                <span class="tile-link">
+                    Explore Pocket Racer
+                    <i class="fa-solid fa-arrow-right"></i>
+                </span>
+            </a>
 
+            <a href="gallery.html" class="panel project-tile">
+                <div class="tile-title-row">
+                    <img src="images/gallery-icon.jpg" alt="Art Gallery icon" class="tile-thumb" loading="lazy" decoding="async">
+                    <h2>Art Gallery</h2>
+                </div>
+                <p>
+                    A selection of my paintings and visual art pieces.
+                </p>
+                <span class="tile-link">
+                    Visit Art Gallery
+                    <i class="fa-solid fa-arrow-right"></i>
+                </span>
+            </a>
+        </section>
 
-            <li><a href="resume.pdf" target="_blank"><i class="fa-solid fa-file"> </i></a></li>
+        <footer class="footer reveal delay-2">
+            <p>Designed and developed by Hikmet Kaan Oktay</p>
+            <p><span id="year"></span> | hkaanoktay@icloud.com</p>
+        </footer>
+    </main>
 
-            
-            <li><a href="https://www.linkedin.com/in/kaan-oktay/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"> </i></a></li>
-            <li><a href="https://github.com/hkaanoktay" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"> </i></a></li>
-            <li><a href="https://www.instagram.com/hikmetkaanoktay/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"> </i></a></li>
-        </ul>
+    <script>
+        const revealTargets = document.querySelectorAll('.reveal');
 
-        <p>E-mail: hkaanoktay@icloud.com</p>
-    </div>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('in-view');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.2 });
+
+        revealTargets.forEach((el) => observer.observe(el));
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 
 </html>

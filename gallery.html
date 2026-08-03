@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="theme-color" content="#102530">
+    <meta name="color-scheme" content="dark">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Gallery | Hikmet Kaan Oktay</title>
+    <link rel="preload" as="image" href="images/background.jpeg?v=20260803b">
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <style>
+        html, body { background: #09131a; }
+    </style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="gallery-page">
+    <a href="index.html" class="home-icon" aria-label="Back to home">
+        <i class="fa-solid fa-house"></i>
+    </a>
+    <main class="subpage-shell">
+        <section class="panel subpage-panel reveal">
+            <h1>Art Gallery</h1>
+            
+            <p class="subpage-intro">
+                A selection of my paintings and visual studies.
+            </p>
+
+            <p class="subpage-kicker">by Kaan Oktay</p>
+
+            
+            <div class="media-grid art-media">
+                <figure class="media-card">
+                    <img src="images/Mardin.jpg" alt="Painting titled Mardin" loading="lazy" decoding="async">
+                    <figcaption>Mardin, 2026.</figcaption>
+                </figure>
+                <figure class="media-card">
+                    <img src="images/Stockholm.jpg" alt="Painting titled Stockholm" loading="lazy" decoding="async">
+                    <figcaption>Stockholm, 2026.</figcaption>
+                </figure>
+                <figure class="media-card">
+                    <img src="images/Cleopatras-Bath.jpg" alt="Painting titled Cleopatra's Bath" loading="lazy" decoding="async">
+                    <figcaption>Cleopatra's Bath, 2025.</figcaption>
+                </figure>
+                <figure class="media-card">
+                    <img src="images/Pocket-Racer.jpg" alt="Painting titled Pocket Racer" loading="lazy" decoding="async">
+                    <figcaption>Pocket Racer, 2025.</figcaption>
+                </figure>
+                <figure class="media-card">
+                    <img src="images/Ferrari.jpg" alt="Painting titled Everybody is a Ferrari Fan" loading="lazy" decoding="async">
+                    <figcaption>Everybody is a Ferrari Fan, 2025.</figcaption>
+                </figure>
+                <figure class="media-card">
+                    <img src="images/Milky-Way.jpg" alt="Painting titled Milky Way" loading="lazy" decoding="async">
+                    <figcaption>Milky Way, 2020.</figcaption>
+                </figure>
+            </div>
+
+            <a href="https://www.instagram.com/kaan.artpage/" target="_blank" rel="noopener noreferrer" class="btn secondary gallery-instagram-link">
+                <i class="fa-brands fa-instagram"></i>
+                For the Full Gallery
+            </a>
+        </section>
+
+        <footer class="footer reveal delay-1">
+            <p>Designed and developed by Hikmet Kaan Oktay</p>
+            <p><span id="year"></span> | hkaanoktay@icloud.com</p>
+        </footer>
+    </main>
+
+    <script>
+        const revealTargets = document.querySelectorAll('.reveal');
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('in-view');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.15 });
+
+        revealTargets.forEach((el) => observer.observe(el));
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
