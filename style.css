@@ -217,7 +217,7 @@ body:not(.gallery-page):not(.pocket-page) .footer {
 body.home-page .btn.primary {
     color: #eef6fb;
     border: 1px solid rgba(207, 222, 232, 0.36);
-    background: linear-gradient(130deg, #56758f, #7ea5c5);
+    background: #6c8eab;
 }
 
 .btn.secondary {
